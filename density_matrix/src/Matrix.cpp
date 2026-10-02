@@ -1,5 +1,5 @@
-#include "../headers/Matrix.hpp"
-#include "../headers/State.hpp"
+#include "Matrix.hpp"
+#include "State.hpp"
 
 
 // --------------------------------------------------------

@@ -154,21 +154,21 @@ def plot_evolution_comparison(
     # MAIN TITLE
     # =========================================================
 
-    if a == b:
+    # if a == b:
 
-        fig.suptitle(
-            rf"$a=b$, "
-            rf"$\Delta={delta}$, $V={V}$",
-            fontsize=14
-        )
+    #     fig.suptitle(
+    #         rf"$a=b$, "
+    #         rf"$\Delta={delta}$, $V={V}$",
+    #         fontsize=14
+    #     )
 
-    else:
+    # else:
 
-        fig.suptitle(
-            rf"$a={a}$, $b={b}$, "
-            rf"$\Delta={delta}$, $V={V}$",
-            fontsize=14
-        )
+    #     fig.suptitle(
+    #         rf"$a={a}$, $b={b}$, "
+    #         rf"$\Delta={delta}$, $V={V}$",
+    #         fontsize=14
+    #     )
 
 
     fig.tight_layout()
@@ -178,7 +178,6 @@ def plot_evolution_comparison(
         dpi=300
     )
 
-    plt.show()
 
 
 # =============================================================
@@ -188,13 +187,13 @@ def plot_evolution_comparison(
 if __name__ == "__main__":
 
     plot_evolution_comparison(
-        theory_file="data/th_a1b0E1V0.csv",
-        numeric_file="data/num_a1b0E1V0.csv",
-        output_file="images/comparison.png",
+        theory_file="data/a1b1E1V2/st1000_theory.csv",
+        numeric_file="data/a1b1E1V2/st1000_numeric.csv",
+        output_file="images/a1b1E1V2/st1000.png",
 
         a=1,
-        b=0,
+        b=1,
 
         delta=1,
-        V=0
+        V=2
     )
