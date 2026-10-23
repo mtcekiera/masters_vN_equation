@@ -1,4 +1,4 @@
-#include "../headers/twoState.hpp"
+#include "twoState.hpp"
 
 namespace twoState{
     

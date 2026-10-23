@@ -144,6 +144,6 @@ def analyse_folder(folder_name):
 
 
 if __name__ == "__main__":
-    folder_name = "a1b1E1V2"
+    folder_name = "TEST_a08b06_D1V2"
 
     analyse_folder(folder_name)

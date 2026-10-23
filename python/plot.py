@@ -41,7 +41,7 @@ def plot_evolution_comparison(
     )
 
     axes[0, 0].set_title(
-        r"Theory: $\rho_{11}$"
+        r"Analitycznie: $\rho_{11}$"
     )
 
 
@@ -65,7 +65,7 @@ def plot_evolution_comparison(
     )
 
     axes[1, 0].set_title(
-        r"Theory: $\rho_{22}$"
+        r"Analitycznie: $\rho_{22}$"
     )
 
 
@@ -96,7 +96,7 @@ def plot_evolution_comparison(
     )
 
     axes[2, 0].set_title(
-        r"Theory: $\rho_{12}$"
+        r"Analitycznie: $\rho_{12}$"
     )
 
     axes[2, 0].legend()
@@ -164,11 +164,11 @@ def plot_evolution_comparison(
 
     # else:
 
-    #     fig.suptitle(
-    #         rf"$a={a}$, $b={b}$, "
-    #         rf"$\Delta={delta}$, $V={V}$",
-    #         fontsize=14
-    #     )
+        fig.suptitle(
+            rf"$a={a}$, $b={b}$, "
+            rf"$\Delta={delta}$, $V={V}$",
+            fontsize=14
+        )
 
 
     fig.tight_layout()
@@ -187,12 +187,12 @@ def plot_evolution_comparison(
 if __name__ == "__main__":
 
     plot_evolution_comparison(
-        theory_file="data/a1b1E1V2/st1000_theory.csv",
-        numeric_file="data/a1b1E1V2/st1000_numeric.csv",
-        output_file="images/a1b1E1V2/st1000.png",
+        theory_file="data/TEST_a08b06_D1V2/st1000_theory.csv",
+        numeric_file="data/TEST_a08b06_D1V2/st1000_numeric.csv",
+        output_file="images/TEST_a08b06_D1V2/shape_plots.png",
 
-        a=1,
-        b=1,
+        a=0.8,
+        b=0.6,
 
         delta=1,
         V=2
